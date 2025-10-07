@@ -3,23 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anupa Binu | Reflections</title>
+  <title>Notes to Self 🌙</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial; max-width: 700px; margin: 40px auto; line-height: 1.6; }
-    h1 { text-align: center; }
-    a { color: #0073b1; text-decoration: none; }
+    /* --- General Styles --- */
+    body {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      background: #fef9f3; /* soft paper tone */
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4a4a4a;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+
+    /* --- Section Styles --- */
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    /* Notebook cards */
+    .notebook {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .entry {
+      background: #fff8f0;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    /* About & Connect */
+    .about, .connect {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Personal Reflections</h1>
-  <p>Welcome! I'm Anupa — this is a space where I reflect on my journey, learnings, and personal growth.</p>
-  <h2>About Me</h2>
-  <p>I’m a tech enthusiast currently exploring how databases, AI, and design connect to human experience.</p>
-  <h2>Recent Reflections</h2>
-  <ul>
-    <li><strong>On Growth:</strong> Every setback teaches resilience.</li>
-    <li><strong>On Learning:</strong> True understanding comes from curiosity, not obligation.</li>
-  </ul>
-  <p>Connect with me on <a href="https://www.linkedin.com/in/anupa-binu-29a546190/">LinkedIn</a>.</p>
+
+  <header>
+    <h1>Notes to Self 🌙</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#notebook">Notebook</a>
+      <a href="#about">About</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="intro">
+    <p>I collect thoughts the way some people collect photographs. A quiet place for fleeting reflections, little insights, and the moments I want to remember.</p>
+  </section>
+
+  <!-- Notebook -->
+  <section id="notebook" class="notebook">
+    <div class="entry" style="animation-delay: 0.1s;">The sunset whispered stories only I could hear.</div>
+    <div class="entry" style="animation-delay: 0.3s;">Tea in the morning tastes better when I take a moment to watch the clouds drift.</div>
+    <div class="entry" style="animation-delay: 0.5s;">Some thoughts deserve to linger in silence, not in words.</div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about" style="animation-delay:0.7s;">
+    <p>I am Anupa, someone who loves reflecting quietly and finding beauty in the little things. This space is less about achievements and more about the journey of noticing and recording life’s subtle poetry.</p>
+  </section>
+
+  <!-- Connect -->
+  <section id="connect" class="connect" style="animation-delay:0.9s;">
+    <p>Connect with me: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a> | <a href="mailto:your.email@example.com">Email</a></p>
+  </section>
+
+  <footer>
+    <p>🌿 Your digital notebook | 2025</p>
+  </footer>
+
 </body>
 </html>
